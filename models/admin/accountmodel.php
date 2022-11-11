@@ -57,5 +57,22 @@
                 $query->execute();
             }
         }
+        function checkemail($email){
+            $sql ="SELECT * FROM user_account WHERE email_account = '$email'";
+            $query = $this->conn->prepare($sql);
+            $query->execute();
+            $result = $query->rowCount();
+            return $result;
+        }
+        function createUser($email,$pass,$name,$address,$phonenumber){
+            // try{
+                $sql ="INSERT INTO user_account VALUES ('','$name','$email','$pass','$phonenumber','$address',current_time(),'','true')";
+                $query = $this->conn->prepare($sql);
+                $query->execute();
+                return true;
+            // }catch(Exception $e){
+            //     return false;
+            // }
+        }
     }
 ?>

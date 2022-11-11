@@ -1,0 +1,1 @@
+{"version":1,"defects":{"FuntionTest::testLogin":4,"App\\FuntionTest::testLogin":3,"App\\FuntionTest::testRegister":3},"times":{"FuntionTest::testAdd":0.013,"FuntionTest::testLogin":0.013,"App\\FuntionTest::testLogin":0.016,"App\\FuntionTest::testRegister":0.029}}

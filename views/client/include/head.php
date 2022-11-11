@@ -32,5 +32,5 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <link href="public/client/csss/cart.css" rel="stylesheet">
     <link href="public/client/csss/info.css" rel="stylesheet">
-    <script src="../../../../public/client/js/trung-font-icon.js"></script>
+    <script src="public/client/js/trung-font-icon.js"></script>
 </head><!--/head-->

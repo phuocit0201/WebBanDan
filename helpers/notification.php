@@ -1,9 +1,10 @@
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <?php
 //mã màu #3085d6
 function notification($icon,$title,$content,$btntext,$showbtn,$colorbtn){
-    echo '<script>
+    echo '
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
     $(document).ready(function(){
         Swal.fire({
             position: "center",
@@ -18,7 +19,10 @@ function notification($icon,$title,$content,$btntext,$showbtn,$colorbtn){
 </script>';
 }
 function NotifiSiginSuccess(){
-    echo '<script>
+    echo '
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
     $(document).ready(function(){
         Swal.fire({
             title: "Đăng Kí Tài Khoản Thành Công",
@@ -37,7 +41,10 @@ function NotifiSiginSuccess(){
 }
 //xử lý đơn hàng trang admin
 function NotifiOrder($text,$url){
-    echo '<script>
+    echo '
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
     $(document).ready(function(){
         Swal.fire({
             title: "'.$text.'",
@@ -56,7 +63,10 @@ function NotifiOrder($text,$url){
 }
 
 function NotifiError($text,$url){
-  echo '<script>
+  echo '
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script>
   $(document).ready(function(){
       Swal.fire({
           title: "'.$text.'",
@@ -76,6 +86,8 @@ function NotifiError($text,$url){
 //thay đổi thành công
 function notifichanger($text){
   echo "
+  <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+<script src='https://code.jquery.com/jquery-3.6.0.js'></script>
   <script>
   $(document).ready(function(){
     Swal.fire({
@@ -91,7 +103,10 @@ function notifichanger($text){
 }
 //thông báo hết số lượng sản phẩm
 function NotifiErrorQuantity($text){
-  echo '<script>
+  echo '
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script>
   $(document).ready(function(){
       Swal.fire({
           title: "'.$text.'",
@@ -107,6 +122,8 @@ function NotifiErrorQuantity($text){
 //thông báo lỗi góc phải màn hình
 function NotificationRight($text,$position){
   echo '
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script>
   $(document).ready(function(){
     const Toast = Swal.mixin({
