@@ -6,8 +6,8 @@
                 <?php if($this->isAdmin == 1){?><li><a href="<?=base?>admin/home"><i class="fa fa-dashboard"></i> Bản Điều Khiển</a>
                   </li><?php }?>
                   <?php if($this->isAdmin == 1){?><li><a href="<?=base?>admin/useraccount"><i class="fa fa-users"></i>Quản Lí Khách Hàng</a></li><?php }?>
-                  <?php if($this->isAdmin == 1){?><li><a href="<?=base."admin/showpersonnel"?>"><i class="fa fa-graduation-cap"></i>Quản Lí Nhân Viên</a></li><?php }?>
-                  <?php if($this->isAdmin == 1){?><li><a href="<?=base."admin/showadmin"?>"><i class="fa fa-flag"></i>Quản Lí Quản Trị Viên</a></li><?php }?>
+                  <!-- <?php if($this->isAdmin == 1){?><li><a href="<?=base."admin/showpersonnel"?>"><i class="fa fa-graduation-cap"></i>Quản Lí Nhân Viên</a></li><?php }?>
+                  <?php if($this->isAdmin == 1){?><li><a href="<?=base."admin/showadmin"?>"><i class="fa fa-flag"></i>Quản Lí Quản Trị Viên</a></li><?php }?> -->
                   <li><a href="<?=base?>admin/order"><i class="fa fa-shopping-cart"></i>Quản Lí Đơn Hàng</a></li>
                   <li><a href="<?=base."admin/showcategory"?>"><i class="fa fa-list"></i>Quản Lí Danh Mục</a></li>
                   <li><a href="<?=base."admin/showproduct"?>"><i class="fa fa-archive"></i>Quản Lí Sản Phẩm</a></li>

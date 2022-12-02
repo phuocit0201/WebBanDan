@@ -32,9 +32,7 @@
                         $quantity_product = $this->checkoutmodel->GetQuantityById($values["id"]);
                         //Khi bấm thanh toán thì lấy số lượng còn trong kho trừ đi số lượng mà người dùng mua rồi cập nhật lại số lượng
                         $quantity_update = $quantity_product[0]["quantity"] - $values["quantity"];
-                        echo $quantity_product[0]["quantity"]."\n";
-                        echo $values["quantity"]."\n";
-                        echo $quantity_update;
+                        
                         $this->checkoutmodel->UpdateQuantityById($values["id"],$quantity_update);
                         //lấy số lượng mà người dùng đã mua ghi vào mục pay (số lượng đã bán)
                         $quantity_pay = $this->checkoutmodel->GetProductPay($values["id"]) + $values["quantity"];
